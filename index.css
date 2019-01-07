@@ -1,7 +1,7 @@
 
 body {
-    background: skyblue;
-    font-family: 'Raleway', sans-serif;
+    background: black;
+    font-family: 'Raleway', Helvetica, sans-serif;
     font-size: 100%;
     text-align: center;
     margin: 0;
@@ -30,5 +30,5 @@ h1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
