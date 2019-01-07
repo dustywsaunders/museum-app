@@ -1,6 +1,6 @@
 
 body {
-    background: skyblue;
+    background: black;
     font-family: 'Raleway', sans-serif;
     font-size: 100%;
     text-align: center;
@@ -30,5 +30,5 @@ h1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
