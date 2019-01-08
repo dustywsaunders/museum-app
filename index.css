@@ -12,12 +12,27 @@ main {
     background: white;
     width: 90%;
     margin: auto;
-    border-radius: 5px;
+    border-radius: 7px;
     padding: 1rem 0;
 }
 
 h1 {
     margin: 3rem 1rem 6rem 1rem;
+    font-size: 1.5rem;
+}
+
+/* small screens */
+@media (max-width: 320px) {
+    h1 {
+        margin: 2rem 1rem 2rem 1rem;    
+    }
+}
+
+/* medium screens */
+@media (min-width: 321px) and (max-width: 500px) {
+    h1 {
+        margin: 3rem 1rem 3rem 1rem;    
+    }
 }
 
 .artObject {
