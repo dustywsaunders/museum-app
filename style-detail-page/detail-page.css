@@ -43,16 +43,17 @@ h1 {
 
 .content p {
     max-width: 75%;
-}
-
-.content {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
 }
 
 /* COMMENTS */
+.comments {
+    border: black solid 1px;
+    max-width: 30rem;
+    padding: 0.7rem;
+    margin: 1rem auto;
+
+}
 
 /* FORM */
 

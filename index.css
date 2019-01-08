@@ -41,6 +41,10 @@ h1 {
     margin: 1rem;
 }
 
+a:hover {
+    transform: scale(1.1);
+}
+
 #gallery {
     display: flex;
     flex-flow: row wrap;
