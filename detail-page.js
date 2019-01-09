@@ -1,6 +1,7 @@
 
-// PASS VALIDATION
-function doesNotPassAllValidations(name, msg) {
+// PASS VALIDATIONS
+function passValidations(name, msg) {
+
     // ERROR CONDITIONS
     if (!msg && !name) {
         alert('Whoops, you forgot to fill in your name and message!')
@@ -21,7 +22,8 @@ function doesNotPassAllValidations(name, msg) {
       alert('Whoops, your comment is too long!')
       return true
     };
-  
+    
+    // IF NO ERROR, THEN THIS WILL FIRE AS FALSE. SEE LINE 53
     return false
 };
 
@@ -32,6 +34,7 @@ function submitComment() {
     // gather data
     const inputField = document.getElementById('name')
     const name = inputField.value
+
     const textArea = document.getElementById('msg')
     const msg = textArea.value
 
@@ -47,10 +50,12 @@ function submitComment() {
     comment.appendChild(h3)
     comment.appendChild(p)
     
-    if (doesNotPassAllValidations(name, msg)) {
+    //IF PASS VALIDATIONS RETURNED 'TRUE'
+    if (passValidations(name, msg)) {
         return null
+        //IF PASS VALIDATIONS RETURNED 'FALSE'
     } else {
-    // displaying comments
+    // display the comments
     const commentSection = document.getElementById('comments')    
     commentSection.appendChild(comment)
         
