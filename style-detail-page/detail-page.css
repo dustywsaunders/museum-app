@@ -92,6 +92,12 @@ textarea {
     vertical-align: top;
 }
 
+label {
+    display: inline-block;
+    width: 80%;
+    padding-top: 1rem;
+  }
+
 /* FOOTER */
 footer {
     padding-top: 2rem;
