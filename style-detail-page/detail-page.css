@@ -54,7 +54,6 @@ h1 {
     max-width: 25rem;
     padding: 0.7rem;
     margin: 1rem auto;
-
 }
 
 /* FORM */
@@ -64,17 +63,33 @@ form {
     max-width: 25rem;
     padding: 0.7rem;
     margin: 1rem auto;
-
+    display: flex;
+    flex-direction: column;
 }
 
 button {
     margin: 1rem auto;
 }
 
-button:hover {
+button:hover, button:focus {
     color:white;
     background-color: black;
     transform: scale(1.1);
+    box-shadow: 2px 2px 5px 0px grey;
+}
+
+input, textarea {
+    width: 70%;
+    border: 1px solid darkgrey;
+}
+
+input {
+    min-height: 1.5rem;
+}
+
+textarea {
+    min-height: 3rem;
+    vertical-align: top;
 }
 
 /* FOOTER */
