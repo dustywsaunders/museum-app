@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../style-detail-page/detail-page.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="../detail-page.js"></script>
 </head>
 <body>
     <main>
@@ -17,27 +18,26 @@
             <img alt="Stilleven met gemberpot-1" title="Stilleven met gemberpot-1, Piet Mondriaan." src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Mondrian%2C_Still_Life_with_Gingerpot_I.jpg">
         </section>
 
-        <section class>
-            <h2>comments</h2>
-
-            <section class="comments">
-              <h3>Somebody said:</h3>
-              <p>"Yip, that is a painting!"</p>
-            </section>
+        <section id='comments'>
+          <h2>Comments</h2>
+          <section class='comment'>
+            <h3>Somebody said:</h3>
+            <p>"Yip, this is definitely a painting!"</p>
+          </section>
         </section>
-      
+
         <form onsubmit="submitComment(); return false">
-            <div class="formSection">
-              <label for="name">Name:</label>
-              <input type="text" id="name">
-            </div>
-            <div class="formSection">
-              <label for="msg">Message:</label>
-              <textarea id="msg"></textarea>
-            </div>
-            <div class="button">
-              <button type="default">Post your comment</button>
-            </div>
+          <div class="formSection">
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+          </div>
+          <div class="formSection">
+            <label for="msg">Message:</label>
+            <textarea id="msg" placeholder="max. 280 characters"></textarea>
+          </div>
+          <div class="button">
+            <button type="default">Post your comment</button>
+          </div>
         </form>
         
         <footer>
