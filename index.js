@@ -324,38 +324,37 @@ const data = {
     ]
 }
 
-function displayPainting(painting) {
-  
-  // create array from data object
-  const painting = data.artObjects
-  
-  // create new image elements from array [i]
+// create array from data object
+const paintings = data.artObjects
 
-  for (let i = 0; i < painting.length; i++) {
+// create new image elements from array [i]
+
+for (let i = 0; i < paintings.length; i++) {
     
-    // create new elements
+  // declare current painting and call function
 
-    const galleryLink = document.createElement('a')
-    const galleryImage = document.createElement('img')
-
-    //adjust new elements
-
-    galleryLink.href = "pages/detail-page.html"
-    galleryImage.alt = painting[i].title 
-    galleryImage.src = painting[i].webImage.url
-    galleryImage.classList.add("artObject")
-
-    // append children to parents
-
-    const gallerySection = document.getElementById('gallery')
-    gallerySection.appendChild(galleryLink)
-    galleryLink.appendChild(galleryImage)
-
-    const currentPainting = painting[i];
-
-    displayPainting(currentPainting);
-    
-  }
+ const painting = paintings[i];
+ displayPainting(painting);
 };
+  
+function displayPainting(painting) {
 
+  // create new elements
+
+  const galleryLink = document.createElement('a')
+  const galleryImage = document.createElement('img')
+
+  //adjust new elements
+
+  galleryLink.href = "pages/detail-page.html"
+  galleryImage.alt = painting.title 
+  galleryImage.src = painting.webImage.url
+  galleryImage.classList.add("artObject")
+
+  // append children to parents
+
+  const gallerySection = document.getElementById('gallery')
+  gallerySection.appendChild(galleryLink)
+  galleryLink.appendChild(galleryImage)
+};
 
