@@ -1,18 +1,20 @@
 
 // PASS VALIDATIONS
 function passValidations(name, msg) {
-
     // ERROR CONDITIONS
+    // NO NAME & NO MESSAGE
     if (!msg && !name) {
         alert('Whoops, you forgot to fill in your name and message!')
       return true;
     };
 
+    // NO NAME ONLY
     if (msg && !name) {
         alert('Whoops, you forgot to fill in your name!')
         return true;
     };
 
+    // NO MESSAGE ONLY
     if (!msg && name) {
         alert('Whoops, you forgot to fill in your message!')
         return true;
@@ -45,7 +47,7 @@ function submitComment() {
 
     // adjust the elements we created
     h3.innerHTML = `${name} said:`
-    p.innerHTML = '\"' + msg + '\"'
+    p.innerHTML = '"' + msg + '"'
     comment.classList.add('comments')
     comment.appendChild(h3)
     comment.appendChild(p)
