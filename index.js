@@ -330,11 +330,13 @@ const paintings = data.artObjects
 // create new image elements from array [i]
 
 for (let i = 0; i < paintings.length; i++) {
-    
-  // declare current painting and call function
+  const painting = paintings[i];
+  const MAX_DISPLAY_WIDTH = 2400;
+  const PAINTER = 'Honthorst';
 
- const painting = paintings[i];
- displayPainting(painting);
+  if (painting.webImage.width > MAX_DISPLAY_WIDTH && !painting.principalOrFirstMaker.includes(PAINTER)) {
+    displayPainting(painting);
+  }
 };
   
 function displayPainting(painting) {
